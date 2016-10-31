@@ -85,3 +85,11 @@ Although the program automatically detect duplicate entries and treat it as one,
 where `src` is the current dictionary list file and `dst` is the "improved" dictionary list file.
 
 P.S : even I don't know why I named it "improve" :D
+
+## License
+```
+Copyright © 2016 Turfa Auliarachman <turfa_auliarachman@rocketmail.com>
+This work is free. You can redistribute it and/or modify it under the
+terms of the Do What The Fuck You Want To Public License, Version 2,
+as published by Sam Hocevar. See the LICENSE file for more details.
+```
