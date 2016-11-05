@@ -389,7 +389,6 @@ peranti|piranti
 personel|personil
 teoretis|teoritis
 video|vidio
-benar|salah
 cengkih|cengkeh
 disertasi|desertasi
 intelijen|intelejen
