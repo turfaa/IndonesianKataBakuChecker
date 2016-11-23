@@ -74,7 +74,6 @@ modern|moderen
 mubazir|mubadir
 mulia|mulya
 mungkir|pungkir
-museum|museum
 napas|nafas
 narasumber|nara
 nasihat|nasehat
@@ -195,7 +194,6 @@ hanya|cuma
 habis|abis
 ideology|idiologi
 ikhlas|ihlas
-institute|institute
 interogasi|interograsi
 introspeksi|interospeksi
 interupsi|intrupsi
