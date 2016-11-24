@@ -60,7 +60,6 @@ kuantitatif|kwantitatif
 kualitas|kwalitas
 kuitansi|kwitansi
 lubang|lobang
-maaf|ma’af
 makhluk|mahluk
 manajemen|menejemen
 masjid|mesjid
@@ -132,7 +131,6 @@ ikhlas|iklas
 ingat|inget
 itikad|itikat
 jumat|jumaat
-kantung|kantong
 karena|karna
 kasier|kasir
 karisma|kharisma
@@ -189,7 +187,7 @@ hipotek|hipotik
 hierarki|hirarkhi
 hanya|cuma
 habis|abis
-ideology|idiologi
+ideologi|idiologi
 ikhlas|ihlas
 interogasi|interograsi
 introspeksi|interospeksi
@@ -202,6 +200,8 @@ kredit|kridit
 linear|linier
 manajemen|managemen
 masal|missal
+misal|missal
+masal|massal
 manajer|menejer
 monarki|monarkhi
 moral|moril
@@ -533,7 +533,7 @@ muazin|muadzin
 azan|adzan
 ustaz|ustadz
 ustaz|ustad
-ustaz|ustadzah
+ustazah|ustadzah
 zikir|dzikir
 zuhur|dzuhur
 zuhur|dhuhur
