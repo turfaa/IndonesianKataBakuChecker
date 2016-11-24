@@ -128,11 +128,9 @@ dapat|dapet
 disahkan|disyahkan
 februari|febuari
 hilang|ilang
-hutang|utang
 ikhlas|iklas
 ingat|inget
 itikad|itikat
-jadual|jadwal
 jumat|jumaat
 kantung|kantong
 karena|karna
@@ -189,7 +187,6 @@ hectare|hektar
 heterogen|hetrogen
 hipotek|hipotik
 hierarki|hirarkhi
-himbau|imbau
 hanya|cuma
 habis|abis
 ideology|idiologi
@@ -198,7 +195,6 @@ interogasi|interograsi
 introspeksi|interospeksi
 interupsi|intrupsi
 institut|institute
-imaginasi|imajinasi
 kalau|kalo
 kuantitas|kwantitas
 kuota|kwota
