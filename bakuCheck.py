@@ -3,11 +3,11 @@
 # Author    : Turfa Auliarachman
 # Date      : October 23, 2016
 
-from checker.BakuChecker import *
+from bakuchecker.BakuChecker import *
 import sys
 import os.path
 
-dictFile = os.path.dirname(os.path.realpath(__file__))+"/dict.txt"
+dictFile = os.path.dirname(os.path.realpath(__file__))+"/bakuchecker/dict.txt"
 checkerList = []
 
 print("#"*70)
@@ -27,7 +27,6 @@ else:
         print("File {} not found.".format(sys.argv[1]))
     else:
         f = open(sys.argv[1]).readlines()
-
         for i in range(0, len(f)):
             errList = []
 
@@ -36,7 +35,6 @@ else:
 
             for checker in checkerList:
                 errList += checker.check(f[i])
-
             for err in errList:
                 print("Checker       : {}".format(err.checkerDescription))
                 print("Line          : {}".format(i+1))
