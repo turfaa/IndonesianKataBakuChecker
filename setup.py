@@ -1,26 +1,31 @@
 
-from distutils.core import setup
+from setuptools import setup
+
+def readme():
+  with open('README.MD', 'r') as doc:
+    return doc.read()
+
 setup(
-  name = 'YOURPACKAGENAME',         # How you named your package folder (MyLib)
-  packages = ['YOURPACKAGENAME'],   # Chose the same as "name"
-  version = '0.1',      # Start with a small number and increase it with every change you make
-  license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
-  description = 'TYPE YOUR DESCRIPTION HERE',   # Give a short description about your library
-  author = 'YOUR NAME',                   # Type in your name
-  author_email = 'your.email@domain.com',      # Type in your E-Mail
-  url = 'https://github.com/user/reponame',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',    # I explain this later on
-  keywords = ['SOME', 'MEANINGFULL', 'KEYWORDS'],   # Keywords that define your package best
-  install_requires=[            # I get to this in a second
-          'validators',
-          'beautifulsoup4',
-      ],
+  name = 'IndonesianKataBakuChecker',
+  packages = ['IndonesianKataBakuChecker'],
+  version = '0.1',
+  license='MIT',
+  description = 'Indonesian kata baku checker',
+  long_description_content_type = "text/markdown",
+  long_description = readme(),
+  author = 'Turfa Auliarachman',
+  author_email = 't.auliarachman@gmail.com',
+  url = 'https://github.com/turfaa/IndonesianKataBakuChecker',
+  download_url = 'https://github.com/turfaa/IndonesianKataBakuChecker/archive/v_01.tar.gz',
+  keywords = ['indonesia', 'word', 'bahasa', 'kata', 'baku', 'kata baku'],
+  include_package_data = True,
+  package_data = {'' : ['*.txt']},
   classifiers=[
-    'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
-    'Intended Audience :: Developers',      # Define that your audience are developers
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Developers',
     'Topic :: Software Development :: Build Tools',
-    'License :: OSI Approved :: MIT License',   # Again, pick a license
-    'Programming Language :: Python :: 3',      #Specify which pyhton versions that you want to support
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3',
     'Programming Language :: Python :: 3.4',
     'Programming Language :: Python :: 3.5',
     'Programming Language :: Python :: 3.6',

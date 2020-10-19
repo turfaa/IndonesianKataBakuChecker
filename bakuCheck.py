@@ -3,11 +3,11 @@
 # Author    : Turfa Auliarachman
 # Date      : October 23, 2016
 
-from bakuchecker.BakuChecker import *
+from IndonesianKataBakuChecker.BakuChecker import *
 import sys
 import os.path
 
-dictFile = os.path.dirname(os.path.realpath(__file__))+"/bakuchecker/dict.txt"
+dictFile = os.path.dirname(os.path.realpath(__file__))+"/IndonesianKataBakuCheckerTest/dict.txt"
 checkerList = []
 
 print("#"*70)

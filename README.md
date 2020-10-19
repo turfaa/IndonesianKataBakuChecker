@@ -91,7 +91,7 @@ P.S : even I don't know why I named it "improve" :D
 You can easly use as package from your any python program look at example below
 
 ```python
-from bakuchecker import WordReader
+from IndonesianKataBakuChecker import WordReader
 
 reader = WordReader()
 text = "saya sangat handal dalam bermain bola"
