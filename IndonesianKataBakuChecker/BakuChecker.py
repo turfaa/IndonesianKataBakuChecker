@@ -1,5 +1,5 @@
-from checker.BaseChecker import *
-import os.path
+from .BaseChecker import *
+import os.path, json
 
 class BakuChecker(BaseChecker):
     def __init__(self, dict = None):
@@ -62,3 +62,43 @@ class BakuChecker(BaseChecker):
                 i += len(element[1])
 
         return errList
+
+
+# check the word
+
+class WordReader(BakuChecker):
+
+    """
+    This class make bakuchecker posibble to use as a package
+    so you will easly use it in any python program
+    """
+
+    def read_file(self, f):
+        dictFile = os.path.dirname(os.path.realpath(__file__))+"/dict.txt"
+        checkerList = []
+        checkerList.append(BakuChecker(dictFile))
+        final_list = []
+        for i in range(0, len(f)):
+            errList = []
+
+            if (f[i][len(f[i])-1]=="\n"):
+                f[i] = f[i][:-1]
+
+            for checker in checkerList:
+                errList += checker.check(f[i])
+
+            for err in errList:
+                result_list = {}
+                result_list['checker'] = err.checkerDescription
+                result_list['line'] = i + 1
+                result_list['original_text'] = err.original
+                result_list['message'] = err.message
+                final_list = result_list
+                yield final_list
+
+    def get_result(self, text):
+        """
+        this method used for get result of the word
+        """
+        parse_text = text.split('\n')
+        return self.read_file(parse_text)

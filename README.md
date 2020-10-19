@@ -86,6 +86,31 @@ where `src` is the current dictionary list file and `dst` is the "improved" dict
 
 P.S : even I don't know why I named it "improve" :D
 
+## Use as Package
+
+You can easly use as package from your any python program look at example below
+
+```python
+from IndonesianKataBakuChecker import WordReader
+
+reader = WordReader()
+text = "saya sangat handal dalam bermain bola"
+
+for res in reader.get_result(text):
+    print(res)
+```
+
+The result will look like this
+
+```
+{   
+    'checker': 'Kata Baku Checker', 
+    'line': 1, 
+    'original_text': 'saya sangat handal bermain bola', 
+    'message': "The correct word for 'handal' is 'andal'"
+}
+```
+
 ## License
 ```
 Copyright © 2016 Turfa Auliarachman <turfa_auliarachman@rocketmail.com>
