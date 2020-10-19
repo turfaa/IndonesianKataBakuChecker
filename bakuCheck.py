@@ -7,7 +7,7 @@ from IndonesianKataBakuChecker.BakuChecker import *
 import sys
 import os.path
 
-dictFile = os.path.dirname(os.path.realpath(__file__))+"/IndonesianKataBakuCheckerTest/dict.txt"
+dictFile = os.path.dirname(os.path.realpath(__file__))+"/IndonesianKataBakuChecker/dict.txt"
 checkerList = []
 
 print("#"*70)
